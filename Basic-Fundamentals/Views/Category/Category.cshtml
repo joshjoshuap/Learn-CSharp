@@ -21,6 +21,10 @@
            <tr>  
                <td>@obj.Name</td>
                <td>@obj.DisplayOrder</td>
+               <td>
+                   <a class="nav-link text-dark" asp-route-Id="@obj.Id" asp-controller="Category" asp-action="Edit">Edit</a>
+                   <a class="nav-link text-dark" asp-route-Id="@obj.Id" asp-controller="Category" asp-action="Delete">Delete</a>
+               </td>
            </tr>
         }
        

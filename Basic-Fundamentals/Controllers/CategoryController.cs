@@ -32,5 +32,45 @@ namespace Basic_Fundamentals.Controllers
             _db.SaveChanges();
             return RedirectToAction("Category");
         }
+
+        public IActionResult Edit(int? id)
+        {
+            var obj = _db.Category.Find(id);
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Category obj)
+        {
+            if(ModelState.IsValid)
+            {
+                _db.Category.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Category");
+            }
+            return View(obj);
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var obj = _db.Category.Find(id);
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(Category obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Category.Remove(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Category");
+            }
+            return View(obj);
+        }
     }
 }
