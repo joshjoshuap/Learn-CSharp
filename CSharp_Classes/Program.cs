@@ -15,7 +15,12 @@ namespace CSharp_Classes
             Console.WriteLine(totalAdd); // 11
             Console.WriteLine(totalSubtract); // -1
 
-            Accounts.password = "000"; // error cant change the password only readonly
+            // Accounts.password = "000"; // error cant change the password only readonly
+
+            PersonDetails person = new PersonDetails();
+            Console.WriteLine($"Hello {person.firstName} {person.lastName} and age is {person.age} from {person.address}");
+            string personInfo = PersonDetails.FullDetail("Jose","Rizal", "Manila", 100);
+            Console.WriteLine(personInfo);
         }
     }
 }
