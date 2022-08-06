@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic-Fundamentals", "Basic-Fundamentals.csproj", "{75A5745A-B1EC-4BD1-A2B4-31DB22FBDDC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNET_Sample", "ASPNET_Sample.csproj", "{75A5745A-B1EC-4BD1-A2B4-31DB22FBDDC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Todo List", "Simple Todo List.csproj", "{829F7727-AB59-49EF-8BB8-BC61FD98DEFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp_Todo_List", "SampleApp_Todo_List.csproj", "{829F7727-AB59-49EF-8BB8-BC61FD98DEFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
