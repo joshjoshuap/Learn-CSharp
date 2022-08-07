@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Encapsulation
+﻿namespace CSharp_OOP_Encapsulation
 {
     class Program
     {

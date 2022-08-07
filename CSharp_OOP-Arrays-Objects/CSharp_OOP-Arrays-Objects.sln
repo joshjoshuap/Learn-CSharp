@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32630.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_OOP-Arrays-Objects", "CSharp_OOP-Arrays-Objects.csproj", "{8256E5AE-0DD7-4103-ACDA-7078208DF144}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_OOP-Arrays-Objects", "CSharp_OOP-Arrays-Objects.csproj", "{9178CCA2-6AE4-4AFE-8A63-D1F5AB89F7B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8256E5AE-0DD7-4103-ACDA-7078208DF144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8256E5AE-0DD7-4103-ACDA-7078208DF144}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8256E5AE-0DD7-4103-ACDA-7078208DF144}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8256E5AE-0DD7-4103-ACDA-7078208DF144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9178CCA2-6AE4-4AFE-8A63-D1F5AB89F7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9178CCA2-6AE4-4AFE-8A63-D1F5AB89F7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9178CCA2-6AE4-4AFE-8A63-D1F5AB89F7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9178CCA2-6AE4-4AFE-8A63-D1F5AB89F7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B66C29F3-9158-4DE5-BAFC-A0D114D0D4FE}
+		SolutionGuid = {E077F950-A7A2-47D5-A902-368EC35E7BDD}
 	EndGlobalSection
 EndGlobal

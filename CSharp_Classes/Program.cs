@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Classes
+﻿namespace CSharp_Classes
 {
     class Program
     {
@@ -19,7 +17,7 @@ namespace CSharp_Classes
 
             PersonDetails person = new PersonDetails(); // Pass the value to arithmetic class then pass again to add() method
             Console.WriteLine($"Hello {person.firstName} {person.lastName} and age is {person.age} from {person.address}");
-            string personInfo = PersonDetails.FullDetail("Jose","Rizal", "Manila", 100);
+            string personInfo = PersonDetails.FullDetail("Jose", "Rizal", "Manila", 100);
             Console.WriteLine(personInfo);
         }
     }

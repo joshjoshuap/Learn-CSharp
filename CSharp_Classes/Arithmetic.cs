@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharp_Classes
+﻿namespace CSharp_Classes
 {
-  class Arithmetic
+    internal class Arithmetic
     {
         // declare public static if want to access to other class
         // declare private static to prevent access to other class
-        public static int add (int num1, int num2)
+        public static int add(int num1, int num2)
         {
             return num1 + num2;
         }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Arrays_Objects
+﻿namespace CSharp_OOP_Arrays_Objects
 {
     class Program
     {
@@ -10,7 +8,7 @@ namespace CSharp_OOP_Arrays_Objects
             studentList[0] = new Student("Jose", "Rizal", "Manila", "Medicine", "Senior");
             studentList[1] = new Student("Emilio", "Aguinaldo", "Cavite", "Law", "Elite");
 
-           foreach (Student student in studentList)
+            foreach (Student student in studentList)
             {
                 student.displayInfo();
             }

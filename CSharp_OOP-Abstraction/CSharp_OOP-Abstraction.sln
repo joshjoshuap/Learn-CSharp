@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32630.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_OOP-Abstraction", "CSharp_OOP-Abstraction.csproj", "{9F8A4977-AAA9-413D-9206-2C96378C77CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_OOP-Abstraction", "CSharp_OOP-Abstraction.csproj", "{7A32FB5F-5CDD-4FEC-BE0A-03D91D714FBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F8A4977-AAA9-413D-9206-2C96378C77CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F8A4977-AAA9-413D-9206-2C96378C77CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F8A4977-AAA9-413D-9206-2C96378C77CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F8A4977-AAA9-413D-9206-2C96378C77CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A32FB5F-5CDD-4FEC-BE0A-03D91D714FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A32FB5F-5CDD-4FEC-BE0A-03D91D714FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A32FB5F-5CDD-4FEC-BE0A-03D91D714FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A32FB5F-5CDD-4FEC-BE0A-03D91D714FBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DEEBB2F6-7047-464E-89B3-9B5AEF998B92}
+		SolutionGuid = {C0621A12-6D08-4025-976F-2CC7562E3B58}
 	EndGlobalSection
 EndGlobal

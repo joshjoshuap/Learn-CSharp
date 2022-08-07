@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Basics
+﻿namespace CSharp_OOP_Basics
 {
     class Program
     {
@@ -24,7 +22,7 @@ namespace CSharp_OOP_Basics
             p2.age = 101;
             p2.sex = 'M';
 
-            Console.WriteLine(p1.firstName + "" + p1.lastName); // Jose Rizal
+            Console.WriteLine(p1.firstName + " " + p1.lastName); // Jose Rizal
 
         }
     }

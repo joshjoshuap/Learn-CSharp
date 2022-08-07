@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharp_OOP_Abstraction
+﻿namespace CSharp_OOP_Abstraction
 {
     class Instances
     {

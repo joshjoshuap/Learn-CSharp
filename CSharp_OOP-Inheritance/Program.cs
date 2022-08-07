@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Inheritance
+﻿namespace CSharp_OOP_Inheritance
 {
     class Program
     {
@@ -60,7 +58,7 @@ namespace CSharp_OOP_Inheritance
     {
         public string handledSubject { get; set; }
         // Teacher Constructor
-        public Teacher (int schoolD, string firstName, string lastName, string schoolPosition, string handledSubject) : base(schoolD, firstName, lastName, schoolPosition) // inherit the base value must be the same to SchoolData constructor
+        public Teacher(int schoolD, string firstName, string lastName, string schoolPosition, string handledSubject) : base(schoolD, firstName, lastName, schoolPosition) // inherit the base value must be the same to SchoolData constructor
         {
             this.handledSubject = handledSubject;
         }
@@ -73,13 +71,13 @@ namespace CSharp_OOP_Inheritance
         public int gradeQ3 { get; set; }
 
         // Student Constructor with Additional parameter
-        public Student (int schoolD, string firstName, string lastName, string schoolPosition, int gradeQ1, int gradeQ2, int gradeQ3) : base(schoolD, firstName, lastName, schoolPosition)
+        public Student(int schoolD, string firstName, string lastName, string schoolPosition, int gradeQ1, int gradeQ2, int gradeQ3) : base(schoolD, firstName, lastName, schoolPosition)
         {
             this.gradeQ1 = gradeQ1;
             this.gradeQ2 = gradeQ2;
             this.gradeQ3 = gradeQ3;
         }
- 
+
         public void averageGrade()
         {
             Console.WriteLine($"Average: {(gradeQ1 + gradeQ2 + gradeQ3) / 3}");

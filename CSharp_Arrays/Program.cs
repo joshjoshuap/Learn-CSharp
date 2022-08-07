@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Arrays
+﻿namespace CSharp_Arrays
 {
     class Program
     {
@@ -22,25 +20,25 @@ namespace CSharp_Arrays
             pet[0] = Console.ReadLine(); // get user input store to specific index
             pet[1] = Console.ReadLine();
             Console.WriteLine($"The two pet are {pet[0]} and {pet[1]}"); // The two pet are dog and cat
-      
+
             // Two Dimesional Array
             string[,] heroesName = {
                 {"Jose", "Rizal"}, // 0 - 0 ,1
                 {"Emilio", "Aguinaldo"},  // 1 - 0, 1
                 {"Andres", "Bonifacio"}// 2 - 0, 1
             };
-            Console.WriteLine("The National Hero is " + heroesName[0,0] + " " + heroesName[0, 1]); // The National Hero is Jose Rizal
+            Console.WriteLine("The National Hero is " + heroesName[0, 0] + " " + heroesName[0, 1]); // The National Hero is Jose Rizal
 
             // Setting Size and Value - Two Dimensional Array
             string[,] address = new string[3, 2]; // rows, cols
-            address[0,0] = "Novaliches";
-            address[0,1] = "Quezon CIty";
+            address[0, 0] = "Novaliches";
+            address[0, 1] = "Quezon CIty";
 
             address[1, 0] = "Monumento";
-            address[1,1] = "Caloocan";
+            address[1, 1] = "Caloocan";
 
-            address[2,0] = "Tondo";
-            address[2,1] = "Manila";
+            address[2, 0] = "Tondo";
+            address[2, 1] = "Manila";
 
             // This will create two dimensional array
             /* 
@@ -50,9 +48,9 @@ namespace CSharp_Arrays
             {Tondo, Manila}
             }
              */
-            Console.WriteLine($"I am from {address[1,0]},{address[2,1]}"); // I am from Monumento,Manila
+            Console.WriteLine($"I am from {address[1, 0]},{address[2, 1]}"); // I am from Monumento,Manila
 
-             // For Loop -  One Dimensional Array
+            // For Loop -  One Dimensional Array
             string[] names = { "Jose", "Maria", "Juan" };
             for (int personName = 0; personName < names.Length; personName++)
             {
@@ -73,7 +71,7 @@ namespace CSharp_Arrays
 
             for (int row = 0; row < country.GetLength(0); row++)
             {
-              Console.WriteLine($"Country: {country[row, 0]}, {country[row, 1]}") ;
+                Console.WriteLine($"Country: {country[row, 0]}, {country[row, 1]}");
             }
             /* 
             Manila, Philippines
@@ -85,7 +83,7 @@ namespace CSharp_Arrays
             {
                 for (int cols = 0; cols < country.GetLength(1); cols++)
                 {
-                    Console.WriteLine(country[rows,cols]);
+                    Console.WriteLine(country[rows, cols]);
                 }
             }
             /* 
@@ -97,7 +95,7 @@ namespace CSharp_Arrays
             Japan
              */
 
-             // For Loop Find  - One Dimensional Array
+            // For Loop Find  - One Dimensional Array
             string[] person = { "Juan", "Maria", "Jose", "", "Emilio" };
             for (int findNull = 0; findNull < person.Length; findNull++)
             {

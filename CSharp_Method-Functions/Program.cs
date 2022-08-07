@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Method_Functions
+﻿namespace CSharp_Method_Functions
 {
     class Program
     {

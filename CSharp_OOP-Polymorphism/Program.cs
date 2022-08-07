@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Polymorphism
+﻿namespace CSharp_OOP_Polymorphism
 {
     class Program
     {
@@ -18,22 +16,25 @@ namespace CSharp_OOP_Polymorphism
         }
     }
 
-    class Animal { 
-       virtual public void makeSound()
+    class Animal
+    {
+        virtual public void makeSound()
         {
             Console.WriteLine("Cant Determine Sound"); // cant displat because it override by other method from other class
         }
     }
 
-    class Dog : Animal {
+    class Dog : Animal
+    {
         override public void makeSound()
         {
             Console.WriteLine("arf arf");
         }
     }
-     
-    class Cat : Animal {
-        override public  void makeSound()
+
+    class Cat : Animal
+    {
+        override public void makeSound()
         {
             Console.WriteLine("meow");
         }

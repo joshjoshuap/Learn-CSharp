@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Loop
+﻿namespace CSharp_Loop
 {
     class Program
     {
@@ -138,7 +136,7 @@ namespace CSharp_Loop
             }
 
             // For Each conditonal
-            string[] password = {"123", "admin", "password123", "wow123", "abcd"};
+            string[] password = { "123", "admin", "password123", "wow123", "abcd" };
             foreach (string breakPassword in password)
             {
                 if (!breakPassword.Equals("wow123"))

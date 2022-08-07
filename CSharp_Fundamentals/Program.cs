@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Fundamentals
+﻿namespace CSharp_Fundamentals
 {
     class Program
     {
@@ -8,14 +6,14 @@ namespace CSharp_Fundamentals
         {
             // Basics
             Console.WriteLine("Hello World!"); // Hello World
-            Console.Write("Hello \nWorld"); 
+            Console.Write("Hello \nWorld");
             /* 
             Hello
             World
              */
 
             // Data Types
-            char  firstLetter = 'J';
+            char firstLetter = 'J';
             string firstName = "Joshua";
             string lastname = "Pautanes";
             int age = 22;

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_Conditional
+﻿namespace CSharp_Conditional
 {
     class Program
     {
@@ -44,7 +42,7 @@ namespace CSharp_Conditional
             }
             else
             {
-                Console.WriteLine("My Respect");   
+                Console.WriteLine("My Respect");
             }
 
             // Nested IF ELSE
@@ -54,32 +52,35 @@ namespace CSharp_Conditional
             Console.WriteLine("Enter Your name");
             personName = Console.ReadLine();
 
-            if(personName != "")
+            if (personName != "")
             {
                 Console.WriteLine($"Hello {personName}");
                 Console.WriteLine("Enter your Age");
                 personAge = Convert.ToInt32(Console.ReadLine());
 
-                if(personAge >= 18)
+                if (personAge >= 18)
                 {
                     Console.WriteLine("Hi You are allowed");
                     Console.WriteLine("Enter your country");
                     personCountry = Console.ReadLine();
 
-                    if(personCountry == "Philippines")
+                    if (personCountry == "Philippines")
                     {
                         Console.WriteLine("Mabuhay");
-                    } else
+                    }
+                    else
                     {
                         Console.WriteLine("Sorry Only from Phiilippines can Access");
                     }
 
-                } else
+                }
+                else
                 {
                     Console.WriteLine("Sorry Minor Not Allowed");
                 }
 
-            } else
+            }
+            else
             {
                 Console.WriteLine("Please Enter a Name");
             }
@@ -94,7 +95,7 @@ namespace CSharp_Conditional
 
             // One Line Ternary Operator
             int grade = 80;
-            string result = (grade >= 76) ? "Passed" : "Failed" ;
+            string result = (grade >= 76) ? "Passed" : "Failed";
             Console.WriteLine(result); // Passed
 
             // Switch Case

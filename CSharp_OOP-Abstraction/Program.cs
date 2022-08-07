@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CSharp_OOP_Abstraction
+﻿namespace CSharp_OOP_Abstraction
 {
     class Program
     {
@@ -33,7 +31,7 @@ namespace CSharp_OOP_Abstraction
 
     class Cat : Animal
     {
-       public override void makeSound()
+        public override void makeSound()
         {
             Console.WriteLine("meow");
         }

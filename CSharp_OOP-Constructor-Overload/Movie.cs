@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharp_OOP_Constructor_Overload
+﻿namespace CSharp_OOP_Constructor_Overload
 {
     class Movie
     {
