@@ -1,8 +1,8 @@
-﻿using ASPNET_Basics.Models;
+﻿using ASPNETCORE_Basics.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ASPNET_Basics.Controllers
+namespace ASPNETCORE_Basics.Controllers
 {
     public class HomeController : Controller
     {
