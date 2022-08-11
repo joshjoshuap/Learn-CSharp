@@ -112,6 +112,11 @@
             {
                 Console.WriteLine(fruit);
             }
+            /* 
+            Apple
+            Banana
+            Orange
+             */
 
             // For Each - Two Dimensional Array
             string[,] cars = {
@@ -124,6 +129,14 @@
             {
                 Console.WriteLine(car);
             }
+            /* 
+            Vios
+            Innova
+            Xpander
+            Montero
+            Wigo
+            Brio
+             */
         }
     }
 }

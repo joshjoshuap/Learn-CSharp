@@ -134,6 +134,11 @@
             {
                 Console.WriteLine(fruit);
             }
+            /*
+            Apple
+            Banana
+            Orange
+             */
 
             // For Each conditonal
             string[] password = { "123", "admin", "password123", "wow123", "abcd" };
@@ -149,6 +154,12 @@
                     break;
                 }
             }
+            /* 
+            Breaking Password Failed Trying Again...
+            Breaking Password Failed Trying Again...
+            Breaking Password Failed Trying Again...
+            You Break the password
+             */
 
             // For Each - Two Dimensional Array
             string[,] cars = {
@@ -161,7 +172,14 @@
             {
                 Console.WriteLine(car);
             }
-
+            /* 
+            Vios
+            Innova
+            Xpander
+            Montero
+            Wigo
+            Brio
+             */
         }
     }
 }

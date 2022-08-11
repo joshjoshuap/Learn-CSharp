@@ -8,19 +8,21 @@
             Boolean isTrue = true;
             if (isTrue)
             {
-                Console.WriteLine("True");
+                Console.WriteLine("True"); 
             }
+            // True
 
             // IF ELSE
             int age = 18;
             if (age < 18)
             {
-                Console.WriteLine("Minor");
+                Console.WriteLine("Minor"); 
             }
             else
             {
-                Console.WriteLine("Adult");
+                Console.WriteLine("Adult"); 
             }
+            // Adult
 
             // IF ELSE IF
             int userAge = 5;
@@ -44,6 +46,7 @@
             {
                 Console.WriteLine("My Respect");
             }
+            // Hey Kid
 
             // Nested IF ELSE
             string personName, personCountry;
@@ -84,6 +87,10 @@
             {
                 Console.WriteLine("Please Enter a Name");
             }
+            /*
+            Hi You Are Allowed
+            Mabuhay
+             */
 
             // Logical Operator
             string username = "admin", password = "admin1"; // Password Incorrect
@@ -92,6 +99,7 @@
             if (username != "admin" && password == "admin123") Console.WriteLine("Username Incorrect");
             if (username == "admin" && password != "admin123") Console.WriteLine("Password Incorrect");
             if (username != "admin" && password != "admin123") Console.WriteLine("Both Incorrect");
+            // Password Incorrect
 
             // One Line Ternary Operator
             int grade = 80;
@@ -127,6 +135,7 @@
                     Console.WriteLine("Not a day");
                     break;
             }
+            // Monday
         }
     }
 }
