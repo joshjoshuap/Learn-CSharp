@@ -1,0 +1,29 @@
+﻿@model AspNetCore_MVC_CRUD2.Models.UpdateStudentViewModel;
+
+<form method="post" action="Update">
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Id</label>
+    <input type="text" class="form-control" asp-for="Id" readonly> 
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">FIrstname</label>
+    <input type="text" class="form-control" asp-for="firstName"> 
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Lastname</label>
+    <input type="text" class="form-control" asp-for="lastName"> 
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Section</label>
+    <input type="text" class="form-control" asp-for="section"> 
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Level</label>
+    <input type="text" class="form-control" asp-for="level"> 
+  </div>
+
+<button type="submit" class="btn btn-danger" asp-controller="StudentInfo" asp-action="Delete">Delete</button>
+<button type="submit" class="btn btn-primary">Update</button>
+  </form>

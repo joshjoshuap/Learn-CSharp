@@ -29,7 +29,7 @@ namespace AspNetCore_MVC_CRUD2.Controllers
             return View();
         }
 
-
+        // Add Student
         [HttpPost]
         public async Task<IActionResult> Add(AddStudentViewModel addStudent)
         {
@@ -43,6 +43,59 @@ namespace AspNetCore_MVC_CRUD2.Controllers
             };
             await simpleCRUD2DbContext.StudentInfos.AddAsync(student);
             await simpleCRUD2DbContext.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        // Display Update Form
+        [HttpGet]
+        public async Task<IActionResult> Update(Guid Id)
+        {
+            var student = await simpleCRUD2DbContext.StudentInfos.FirstOrDefaultAsync(x => x.Id == Id);
+            if (student != null)
+            {
+                var updateModel = new UpdateStudentViewModel()
+                {
+                    Id = student.Id,
+                    firstName = student.firstName,
+                    lastName = student.lastName,
+                    section = student.section,
+                    level = student.level
+                };
+
+                return await Task.Run(() => View("Update", updateModel));
+            }
+            return RedirectToAction("Index");
+        }
+
+        // Updating Student
+        [HttpPost]
+        public async Task<IActionResult> Update(UpdateStudentViewModel model)
+        {
+            var student = await simpleCRUD2DbContext.StudentInfos.FindAsync(model.Id);
+            if (student != null)
+            {
+                student.firstName = model.firstName;
+                student.lastName = model.lastName;
+                student.section = model.section;
+                student.level = model.level;
+
+                await simpleCRUD2DbContext.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+
+        // Deleting Student
+        [HttpPost]
+        public async Task<IActionResult> Delete(UpdateStudentViewModel model)
+        {
+            var student = await simpleCRUD2DbContext.StudentInfos.FindAsync(model.Id);
+            if (student != null)
+            {
+                simpleCRUD2DbContext.StudentInfos.Remove(student);
+                await simpleCRUD2DbContext.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
             return RedirectToAction("Index");
         }
 
