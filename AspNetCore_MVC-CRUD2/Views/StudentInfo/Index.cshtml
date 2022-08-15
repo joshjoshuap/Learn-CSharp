@@ -1,0 +1,24 @@
+﻿@model List<AspNetCore_MVC_CRUD2.Models.StudentInfo>
+
+<h1>Student List</h1>
+
+<a class="btn btn-primary" asp-controller="StudentInfo" asp-action="Add">Add Student</a>
+
+<table class="table">
+    <thead>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Section</th>
+        <th>Level</th>
+    </thead>
+    <tbody>
+        @foreach (var student in Model) {
+            <tr>
+                <td>@student.firstName</td>
+                <td>@student.lastName</td>
+                <td>@student.section</td>
+                <td>@student.level</td>
+            </tr>
+        }
+    </tbody>
+</table>
