@@ -1,0 +1,30 @@
+﻿@model List<JourJournal.Models.Journal>
+@{
+    ViewData["Title"] = "Journal";
+}
+<div class="text-center">
+    <h1 class="display-4">My Journal</h1>
+    <!-- Button trigger modal -->
+    <a class="btn btn-lg bg-primary text-white mx-auto" asp-controller="Journal" asp-action="AddJournal">Create New Journal</a>
+</div>
+
+
+<div class="container">
+  <div class="row">
+   @foreach (var journal in Model) {
+     <div class="col-3 gap-5">
+          <div class="card text-bg-light mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-center">@journal.title</h5>
+            <p class="card-text">@journal.description</p>
+          </div>
+          <p class="d-none">ID: @journal.Id</p>
+          <a class="btn btn-lg btn-primary mx-auto" href="Journal/UpdateJournal/@journal.Id">View</a>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+
+

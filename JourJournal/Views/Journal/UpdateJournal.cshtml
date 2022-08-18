@@ -1,0 +1,20 @@
+﻿@model JourJournal.Models.UpdateJournalViewModel;
+
+<div class="container">
+      <form method="post" action="UpdateJournal">
+        <div class="mb-3">
+          <label for="inputTitle" class="form-label"> <h6> Id </h6></label>
+          <input type="text" class="form-control d-none" id="inputTitle" asp-for="Id" readonly>
+        </div>
+         <div class="mb-3">
+          <label for="inputTitle" class="form-label"> <h2> Title </h2></label>
+          <input type="text" class="form-control" id="inputTitle" asp-for="title">
+        </div>
+        <div class="mb-3">
+          <label for="inputDescription" class="form-label"><h2>Descrption</h2></label>
+          <textarea class="form-control" id="inputDescription" rows="10" asp-for="description"></textarea>
+        </div>
+        <button type="Submit" class="btn btn-xl btn-danger" asp-action="DeleteJournal" asp-controller="Journal">Delete Journal</button>
+        <button type="Submit" class="btn btn-xl btn-success">Update Journal</button>
+      </form>
+</div>

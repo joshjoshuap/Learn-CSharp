@@ -1,6 +1,6 @@
 ﻿namespace JourJournal.Models
 {
-    public class Journal
+    public class UpdateJournalViewModel
     {
         public Guid Id { get; set; }
         public string title { get; set; }
