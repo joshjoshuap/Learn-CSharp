@@ -1,20 +1,24 @@
 ﻿@model JourJournal.Models.UpdateJournalViewModel;
 
-<div class="container">
+<div class="container w-50 my-5">
+    <div class="text-center mb-5">
+    <h1 class="display-4 fw-semibold my-3"><a asp-controller="Journal" asp-action="Index">My Journal</a></h1>
+    <!-- Button trigger modal -->
+    </div>
       <form method="post" action="UpdateJournal">
         <div class="mb-3">
-          <label for="inputTitle" class="form-label"> <h6> Id </h6></label>
+          <label for="inputTitle" class="form-label d-none"> <h6> Id </h6></label>
           <input type="text" class="form-control d-none" id="inputTitle" asp-for="Id" readonly>
         </div>
          <div class="mb-3">
-          <label for="inputTitle" class="form-label"> <h2> Title </h2></label>
+          <label for="inputTitle" class="form-label text-primary"> <h1> Title </h2></label>
           <input type="text" class="form-control" id="inputTitle" asp-for="title">
         </div>
         <div class="mb-3">
-          <label for="inputDescription" class="form-label"><h2>Descrption</h2></label>
+          <label for="inputDescription" class="form-label text-primary"><h1>Descrption</h1></label>
           <textarea class="form-control" id="inputDescription" rows="10" asp-for="description"></textarea>
         </div>
-        <button type="Submit" class="btn btn-xl btn-danger" asp-action="DeleteJournal" asp-controller="Journal">Delete Journal</button>
-        <button type="Submit" class="btn btn-xl btn-success">Update Journal</button>
+        <button type="Submit" class="btn btn-lg btn-success">Update Journal</button>
+        <button type="Submit" class="btn btn btn-lg btn-danger" asp-action="DeleteJournal" asp-controller="Journal">Delete Journal</button>
       </form>
 </div>

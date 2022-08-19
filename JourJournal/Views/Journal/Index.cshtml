@@ -2,29 +2,25 @@
 @{
     ViewData["Title"] = "Journal";
 }
-<div class="text-center">
-    <h1 class="display-4">My Journal</h1>
+<div class="text-center mb-5">
+    <h1 class="display-4 fw-semibold my-3"><a asp-controller="Journal" asp-action="Index">My Journal</a></h1>
     <!-- Button trigger modal -->
     <a class="btn btn-lg bg-primary text-white mx-auto" asp-controller="Journal" asp-action="AddJournal">Create New Journal</a>
 </div>
-
 
 <div class="container">
   <div class="row">
    @foreach (var journal in Model) {
      <div class="col-3 gap-5">
-          <div class="card text-bg-light mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-center">@journal.title</h5>
-            <p class="card-text">@journal.description</p>
+          <div class="card mb-3 border border-primary">
+          <div class="card-header text-center bg-primary text-light py-2 fs-2">@journal.title</div>
+          <div class="card-body ">
+            <p class="card-text p-3">@journal.description</p>
           </div>
           <p class="d-none">ID: @journal.Id</p>
-          <a class="btn btn-lg btn-primary mx-auto" href="Journal/UpdateJournal/@journal.Id">View</a>
+          <a class="btn btn-outline-primary px-5 mb-3 mx-auto" href="Journal/UpdateJournal/@journal.Id">View</a>
         </div>
       </div>
     }
   </div>
 </div>
-
-
-
