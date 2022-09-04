@@ -14,24 +14,19 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Application name", "List", "RecyclableTypes", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Recyclable", "Index", "RecyclableTypes")</li>
-                    <li>@Html.ActionLink("Recylable Item", "Index", "RecyclableItems")</li>
+                    <li>@Html.ActionLink("Recyclable", "List", "RecyclableTypes")</li>
+                    <li>@Html.ActionLink("Recylable Item", "List", "RecyclableItems")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

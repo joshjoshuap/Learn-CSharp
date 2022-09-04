@@ -177,14 +177,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\RecyclableTypes\Create.cshtml" />
     <Content Include="Views\RecyclableTypes\Delete.cshtml" />
-    <Content Include="Views\RecyclableTypes\Details.cshtml" />
     <Content Include="Views\RecyclableTypes\Edit.cshtml" />
-    <Content Include="Views\RecyclableTypes\Index.cshtml" />
+    <Content Include="Views\RecyclableTypes\List.cshtml" />
     <Content Include="Views\RecyclableItems\Create.cshtml" />
     <Content Include="Views\RecyclableItems\Delete.cshtml" />
-    <Content Include="Views\RecyclableItems\Details.cshtml" />
     <Content Include="Views\RecyclableItems\Edit.cshtml" />
-    <Content Include="Views\RecyclableItems\Index.cshtml" />
+    <Content Include="Views\RecyclableItems\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

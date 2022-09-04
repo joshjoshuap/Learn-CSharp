@@ -16,25 +16,10 @@ namespace Recycle.Controllers
         private RecyclableDbContext db = new RecyclableDbContext();
 
         // GET: RecyclableItems
-        public ActionResult Index()
+        public ActionResult List()
         {
             var recyclableItem = db.RecyclableItem.Include(r => r.RecyclableType);
             return View(recyclableItem.ToList());
-        }
-
-        // GET: RecyclableItems/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            RecyclableItem recyclableItem = db.RecyclableItem.Find(id);
-            if (recyclableItem == null)
-            {
-                return HttpNotFound();
-            }
-            return View(recyclableItem);
         }
 
         // GET: RecyclableItems/Create
@@ -45,8 +30,6 @@ namespace Recycle.Controllers
         }
 
         // POST: RecyclableItems/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,RecyclableId,Description,Weight,ComputedRate")] RecyclableItem recyclableItem)
@@ -55,7 +38,7 @@ namespace Recycle.Controllers
             {
                 db.RecyclableItem.Add(recyclableItem);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
 
             ViewBag.RecyclableId = new SelectList(db.RecyclableType, "Id", "Type", "Rate", recyclableItem.RecyclableId);
@@ -79,8 +62,6 @@ namespace Recycle.Controllers
         }
 
         // POST: RecyclableItems/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,RecyclableId,Description,Weight,ComputedRate")] RecyclableItem recyclableItem)
@@ -89,7 +70,7 @@ namespace Recycle.Controllers
             {
                 db.Entry(recyclableItem).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             ViewBag.RecyclableId = new SelectList(db.RecyclableType, "Id", "Type", recyclableItem.RecyclableId);
             return View(recyclableItem);
@@ -118,7 +99,7 @@ namespace Recycle.Controllers
             RecyclableItem recyclableItem = db.RecyclableItem.Find(id);
             db.RecyclableItem.Remove(recyclableItem);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("List");
         }
 
         protected override void Dispose(bool disposing)

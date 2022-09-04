@@ -16,24 +16,9 @@ namespace Recycle.Controllers
         private RecyclableDbContext db = new RecyclableDbContext();
 
         // GET: RecyclableTypes
-        public ActionResult Index()
+        public ActionResult List()
         {
             return View(db.RecyclableType.ToList());
-        }
-
-        // GET: RecyclableTypes/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            RecyclableType recyclableType = db.RecyclableType.Find(id);
-            if (recyclableType == null)
-            {
-                return HttpNotFound();
-            }
-            return View(recyclableType);
         }
 
         // GET: RecyclableTypes/Create
@@ -43,8 +28,6 @@ namespace Recycle.Controllers
         }
 
         // POST: RecyclableTypes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Type,Rate,MinKg,MaxKg")] RecyclableType recyclableType)
@@ -53,7 +36,7 @@ namespace Recycle.Controllers
             {
                 db.RecyclableType.Add(recyclableType);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
 
             return View(recyclableType);
@@ -75,8 +58,6 @@ namespace Recycle.Controllers
         }
 
         // POST: RecyclableTypes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Type,Rate,MinKg,MaxKg")] RecyclableType recyclableType)
@@ -85,7 +66,7 @@ namespace Recycle.Controllers
             {
                 db.Entry(recyclableType).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("List");
             }
             return View(recyclableType);
         }
@@ -113,7 +94,7 @@ namespace Recycle.Controllers
             RecyclableType recyclableType = db.RecyclableType.Find(id);
             db.RecyclableType.Remove(recyclableType);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("List");
         }
 
         protected override void Dispose(bool disposing)

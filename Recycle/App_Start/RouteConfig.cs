@@ -16,7 +16,7 @@ namespace Recycle
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "RecyclableTypes", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "RecyclableTypes", action = "List", id = UrlParameter.Optional }
             );
         }
     }

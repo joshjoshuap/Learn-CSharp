@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Recycle.Models.RecyclableType>
+
+@{
+    ViewBag.Title = "Recyclable List";
+}
+
+    <h1>Recyclable List</h1>
+    <p class="text-center">
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-lg btn-success" })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinKg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaxKg)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinKg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxKg)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id}, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </table>
